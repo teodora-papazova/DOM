@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p id="text">Hello World!</p>
+    </div>
+    <div>
+        <p>Hello</p>
+    </div>
+</body>
+
+<script>
+    function styling(){
+        let text = document.getElementById('text');
+        text.style.textAlign = "center";
+        text.style.fontSize = "100px";
+        text.style.fontFamily = "Arial";
+
+        let divs = document.querySelectorAll('div');
+        for (let i = 0; i < divs.length; i++) {
+            divs[i].style.backgroundColor = "pink";
+        }
+
+        let shadow = document.querySelectorAll('p');
+        for (let i = 0; i < shadow.length; i++) {
+            shadow[i].style.textShadow = "5px 5px"
+        }
+    }
+    styling();
+</script>
+</html>
